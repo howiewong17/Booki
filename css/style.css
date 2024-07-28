@@ -20,21 +20,28 @@ body {
 }
 
 header {
-
+    display: flex;
+    Justify-content: space-between;
     /* TODO Center Logo for Mobile Version using css media query (step 11) */
 
     img {
         Height: 30px;
+        margin-top: 15px;
     }
 
     nav {
-
-        /* TODO Move Navigation to right side of page */
         /* TODO Remove Underline from Menu Items */
-        /* TODO Make menu items on the same line */
+
+        ul li {
+            display: inline;
+            margin-left: 45px;
+            margin-right: 45px;
+            list-style: none;
+            padding: 0px;
+        }
 
         ul {
-            list-style:none;
+            font-size: 18px;
             li :hover {
                 text-decoration-line: overline;
                 color: #0065FC;
