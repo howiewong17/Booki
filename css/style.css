@@ -9,13 +9,52 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid, .fa-regular {
+.fa-solid,
+.fa-regular {
     color: var(--main-color);
 }
 
 body {
     display: flex;
     justify-content: center;
+}
+
+header {
+
+    /* TODO Center Logo for Mobile Version using css media query (step 11) */
+
+    img {
+        Height: 30px;
+    }
+
+    nav {
+
+        /* TODO Move Navigation to right side of page */
+        /* TODO Remove Underline from Menu Items */
+        /* TODO Make menu items on the same line */
+
+        ul {
+            list-style:none;
+            li :hover {
+                text-decoration-line: overline;
+                color: #0065FC;
+            }
+
+        }
+    }
+}
+
+
+/* TODO  Place Navigation tool below Logo for Mobile Version*/
+/* TODO Hover effect for nav using mobile media query*/
+/* TODO Add 50/50 split for nav using mobile media query*/
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 21px;
 }
 
 .main-container {
