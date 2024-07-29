@@ -30,22 +30,31 @@ header {
     }
 
     nav {
-        /* TODO Remove Underline from Menu Items */
-
-        ul li {
-            display: inline;
-            margin-left: 45px;
-            margin-right: 45px;
-            list-style: none;
-            padding: 0px;
-        }
+        /* TODO Move overline up*/
 
         ul {
-            font-size: 18px;
-            li :hover {
-                text-decoration-line: overline;
-                color: #0065FC;
+            margin-top: 15px;
+            list-style: none;
+
+            li {
+                display: inline;
+                margin-left: 45px;
+                margin-right: 45px;
+
+                a {
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    text-decoration-line: overline;
+                    color: #0065FC;
+                }
+
             }
+
+
 
         }
     }
