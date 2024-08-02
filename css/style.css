@@ -15,6 +15,7 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -23,82 +24,79 @@ header {
     display: flex;
     Justify-content: space-between;
     /* TODO Center Logo for Mobile Version using css media query (step 11) */
-
-    img {
-        Height: 30px;
-        margin-top: 15px;
-    }
-
-    nav {
-        /* TODO Move overline up*/
-
-        ul {
-            margin-top: 15px;
-            list-style: none;
-
-            li {
-                display: inline;
-                margin-left: 45px;
-                margin-right: 45px;
-
-                a {
-                    font-size: 18px;
-                    text-decoration: none;
-                    color: black;
-                }
-
-                a:hover {
-                    text-decoration-line: overline;
-                    color: #0065FC;
-                }
-
-            }
-
-
-
-        }
-    }
 }
+
+header img {
+    height: 20px;
+    margin-top: 15px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+header nav ul li a {
+    padding-top: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+/* TODO Fix nesting */
 
 
 /* TODO  Place Navigation tool below Logo for Mobile Version*/
 /* TODO Hover effect for nav using mobile media query*/
 /* TODO Add 50/50 split for nav using mobile media query*/
 
-h1 {
-    font-size: 28px;
+.tagline h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 21px;
+.tagline p {
+    margin-top: 5px;
+    font-size: 17px;
+    margin-bottom: 30px;
 }
 
+.search {
+    Padding: 5px;
+    background-color: #F2F2F2;
+    display: flex;
 
-div.Search{
-    Padding:5px;
-    background-color:#F2F2F2;
-    display:flex;
-    flexwrap: nowrap;
-    img{
-        Margin-right:10px;
-        Height:20px;
+    img {
+        Margin-right: 10px;
+        Height: 20px;
     }
-    form{
-      
-    }
-    button{
-        color:white;
+
+    form {}
+
+    button {
+        color: white;
         background-color: #0065FC;
     }
 }
 
-div.Filters{
-    display:flex;
-    
-    ul{
-        list-style:none;
-        li{
-            display:inline;
+.filters {
+    display: flex;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
             Margin: 5px;
         }
     }
