@@ -74,8 +74,9 @@ p {
 }
 
 
-span{
-    
+div.Search{
+    Padding:5px;
+    background-color:#F2F2F2;
     display:flex;
     flexwrap: nowrap;
     img{
@@ -88,6 +89,18 @@ span{
     button{
         color:white;
         background-color: #0065FC;
+    }
+}
+
+div.Filters{
+    display:flex;
+    
+    ul{
+        list-style:none;
+        li{
+            display:inline;
+            Margin: 5px;
+        }
     }
 }
 
