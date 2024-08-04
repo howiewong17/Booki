@@ -53,9 +53,6 @@ header nav ul li a:hover {
     color: #0065FC;
 }
 
-/* TODO Fix nesting */
-
-
 /* TODO  Place Navigation tool below Logo for Mobile Version*/
 /* TODO Hover effect for nav using mobile media query*/
 /* TODO Add 50/50 split for nav using mobile media query*/
@@ -73,34 +70,54 @@ header nav ul li a:hover {
 
 .search {
     Padding: 5px;
-    background-color: #F2F2F2;
     display: flex;
+    height: 49px;
+}
 
-    img {
-        Margin-right: 10px;
-        Height: 20px;
-    }
+.search i {
+    border: 2px solid #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2 ;
+    color: black;
+    padding: 15px;
+}
 
-    form {}
+.search input[type="search"] {
+    font-size: 21px;
+    font-weight: bold;
+    border:none;
+    margin-left: 20px;
+    border-top-style: 5px solid #F2F2F2;
+    border-bottom-style: 1px solid #F2F2F2;
+}
 
-    button {
-        color: white;
-        background-color: #0065FC;
-    }
+.search button {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 21px;
+    font-weight: bold;
+    border:none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background-color: #0065FC;
 }
 
 .filters {
     display: flex;
-
-    ul {
-        list-style: none;
-
-        li {
-            display: inline;
-            Margin: 5px;
-        }
-    }
 }
+
+.filters ul {
+    list-style: none;
+}
+
+.filters ul li {
+    display: inline;
+    Margin: 5px;
+}
+
+
 
 .main-container {
     width: 100%;
