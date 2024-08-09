@@ -102,6 +102,7 @@ header nav ul li a:hover {
     border-bottom-right-radius: 15px;
     color: white;
     background-color: #0065FC;
+    cursor: pointer;
 }
 
 .search button a {
@@ -146,33 +147,38 @@ header nav ul li a:hover {
     box-sizing: border-box;
 }
 
-.The-Port-Hotel {
+.accomodation-cards {
     border: 5px solid white;
     border-radius: 20px;
     width: 250px;
+    height: 207px;
     background-color: white;
 }
 
-.The-Port-Hotel img{
-    display:flex;
-    align-items: center;
+.accomodation-cards img {
     height: 124px;
-    width: 245px;
-    padding: 2.5px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.The-Port-Hotel h3{
-    padding-left: 5px;
-}
-.The-Port-Hotel p{
-    padding-left: 5px;
+.accomodation-cards h3 {
+    margin: 0px;
 }
 
-.The-Port-Hotel div{
-    padding-left: 5px;
+.accomodation-cards p {
+    margin: 0px;
 }
+
+.accomodation-cards .accommodation-text {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accomodation-cards div {}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -224,6 +230,13 @@ header nav ul li a:hover {
     width: 32%;
 }
 
+.popular-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-top: 33px;
+}
+
 .popular-title {
     display: flex;
     justify-content: space-between;
@@ -232,7 +245,7 @@ header nav ul li a:hover {
 
 .popular-cards .card {
     display: flex;
-    margin-top: 33px;
+    /* margin-top: 33px; */
 }
 
 .popular-cards img {
