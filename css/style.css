@@ -90,7 +90,6 @@ header nav ul li a:hover {
     padding-left: 15px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-
 }
 
 .search button {
@@ -105,12 +104,17 @@ header nav ul li a:hover {
     background-color: #0065FC;
 }
 
+.search button a {
+    text-decoration: none;
+    color: white;
+}
+
 .filters {
     display: flex;
     align-items: center;
 }
 
-.filters h2{
+.filters h2 {
     font-size: 17px;
 }
 
@@ -128,11 +132,11 @@ header nav ul li a:hover {
     border-radius: 25px;
 }
 
-.filters ul :hover{
+.filters ul :hover {
     background-color: #DEEBFF;
 }
 
-.filters ul li i{
+.filters ul li i {
     margin-right: 10px;
 }
 
@@ -142,6 +146,33 @@ header nav ul li a:hover {
     box-sizing: border-box;
 }
 
+.The-Port-Hotel {
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 250px;
+    background-color: white;
+}
+
+.The-Port-Hotel img{
+    display:flex;
+    align-items: center;
+    height: 124px;
+    width: 245px;
+    padding: 2.5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.The-Port-Hotel h3{
+    padding-left: 5px;
+}
+.The-Port-Hotel p{
+    padding-left: 5px;
+}
+
+.The-Port-Hotel div{
+    padding-left: 5px;
+}
 .section-title {
     margin: 0;
     font-size: 22px;
