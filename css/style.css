@@ -211,21 +211,13 @@ header nav ul li a:hover {
     width: 65%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
+    display: block;
 }
 
-.accommodation a {
-    text-decoration: none;
-    color: black;
-}
-
-.accommodation h1 {
-    padding: 0px;
-    margin: 0px;
-    font-size: 22px;
-}
-
-.accommodation-cards {
+.accommodation-cards .cards {
+    display: flex;
+    flex-direction: column;
     display: inline-block;
     border: 5px solid white;
     border-radius: 20px;
@@ -236,29 +228,42 @@ header nav ul li a:hover {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.accommodation-cards img {
+.accommodation h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 22px;
+}
+
+.accommodation a {
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.accommodation-cards .cards img {
     height: 124px;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.accommodation-cards h3 {
+.accommodation-cards .cards h3 {
     margin: 0px;
     font-size: 16px;
     padding-top: 7px;
 }
 
-.accommodation-cards p {
+.accommodation-cards .cards p {
     margin: 0px;
     font-size: 14px;
 }
 
-.accommodation-cards div {
+.accommodation-cards .cards div {
     font-size: 14px;
 }
 
-.accommodation-cards .accommodation-text {
+.accommodation-cards .cards .accommodation-text {
     height: 75px;
     padding-left: 15px;
     display: flex;
@@ -266,11 +271,12 @@ header nav ul li a:hover {
     gap: 8px;
 }
 
-.accommodation h2 a {
+.accommodation h2 {
     text-decoration: none;
     margin: 0px;
     color: black;
     font-size: 18px;
+    padding-top: 30px;
 }
 
 .section-title {
@@ -330,40 +336,81 @@ header nav ul li a:hover {
     margin-bottom: 5px;
 }
 
-/* Activities */
+/* activities-cards */
 
 .activities {
+    padding: 30px;
+}
+
+.activities-cards {
     display: flex;
     gap: 30px;
-    padding: 30px;
-    flex-wrap: wrap;
 }
 
-.activities h2 {
+.activities-cards h2 {
     font-size: 22px;
+    margin: 0px;
+    padding-bottom: 30px;
+    height: 22px;
 }
 
-.activities img {
+.activities-cards img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 380px;
     width: 297px;
 }
 
-.activities .activities-cards {
+.activities-cards .cards {
     height: 445px;
+    width: 297px;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.activities .activities-cards h3 {
+.activities-cards .cards h3 {
     margin: 0px;
     padding: 20px;
     font-size: 16px;
     color: black;
 }
 
-.activities a {
+.activities-cards a {
+    display: inline-block;
     text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 165px;
+}
+
+footer ul {
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
+    width: 33%;
+}
+
+footer ul li {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+footer ul li h1 {
+    font-size: 18px;
+    margin: 0px;
+}
+
+footer ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    text-decoration: none;
+    color: black
 }
