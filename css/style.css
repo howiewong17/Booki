@@ -394,7 +394,7 @@ footer ul {
     padding: 20px;
     margin: 0px;
     list-style: none;
-    width: 33%;
+    flex: 3 1 auto;
 }
 
 footer ul li {
