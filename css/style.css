@@ -21,7 +21,7 @@
 body {
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 header {
@@ -94,6 +94,7 @@ header nav ul li a:hover {
     padding-left: 15px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+    width: 200px;
 }
 
 .search button {
@@ -185,7 +186,7 @@ header nav ul li a:hover {
     font-size: 16px;
 }
 
-.euro {
+.usd {
     font-weight: 700;
 }
 
@@ -202,7 +203,7 @@ header nav ul li a:hover {
 .accommodation-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 25px;
     box-sizing: border-box;
 }
 
@@ -215,20 +216,23 @@ header nav ul li a:hover {
     display: block;
 }
 
-.accommodation-cards .cards {
+.accommodation-cards {
     display: flex;
-    flex-direction: column;
-    display: inline-block;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.accommodation-cards .cards {
     border: 5px solid white;
     border-radius: 20px;
-    width: 250px;
+    width: 243px;
     height: 207px;
     background-color: white;
-    margin-top: 30px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.accommodation h1 {
+.accommodation h2 {
     padding: 0px;
     margin: 0px;
     font-size: 22px;
@@ -246,6 +250,7 @@ header nav ul li a:hover {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .accommodation-cards .cards h3 {
@@ -271,7 +276,7 @@ header nav ul li a:hover {
     gap: 8px;
 }
 
-.accommodation h2 {
+.accommodation h4 {
     text-decoration: none;
     margin: 0px;
     color: black;
@@ -339,7 +344,7 @@ header nav ul li a:hover {
 /* activities-cards */
 
 .activities {
-    padding: 30px;
+    padding: 30px 0px 30px 0px;
 }
 
 .activities-cards {
@@ -402,7 +407,7 @@ footer ul li {
     margin-bottom: 15px;
 }
 
-footer ul li h1 {
+footer ul li h2 {
     font-size: 18px;
     margin: 0px;
 }
@@ -414,3 +419,21 @@ footer ul li a {
     text-decoration: none;
     color: black
 }
+
+/* TODO Add media query for tablets */
+
+@media screen and (max-width: 1024px) {
+    body {
+      background-color: blue;
+    }
+  }
+
+
+
+/* TODO Add media query for mobile */
+
+@media screen and (max-width: 768px) {
+    body {
+      background-color: olive;
+    }
+  }
