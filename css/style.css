@@ -21,14 +21,13 @@
 body {
     margin: auto;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     max-width: 1440px;
 }
 
 header {
     display: flex;
     Justify-content: space-between;
-    /* TODO Center Logo for Mobile Version using css media query (step 11) */
 }
 
 header img {
@@ -58,10 +57,6 @@ header nav ul li a:hover {
     color: #0065FC;
 }
 
-/* TODO  Place Navigation tool below Logo for Mobile Version*/
-/* TODO Hover effect for nav using mobile media query*/
-/* TODO Add 50/50 split for nav using mobile media query*/
-
 .tagline h1 {
     margin-top: 35px;
     font-size: 24px;
@@ -88,7 +83,7 @@ header nav ul li a:hover {
     padding: 15px;
 }
 
-.search input[type="search"] {
+.search input {
     font-size: 18px;
     font-weight: bold;
     border: none;
@@ -228,7 +223,7 @@ header nav ul li a:hover {
     border: 5px solid white;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 243px;
+    width: 250px;
     height: 213px;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -241,7 +236,6 @@ header nav ul li a:hover {
 }
 
 .accommodation a {
-    gap: 15px;
     text-decoration: none;
     color: black;
 
@@ -307,6 +301,11 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.popular-cards a {
+    text-decoration: none;
+    color: black;
 }
 
 .popular-cards .card {
@@ -423,20 +422,89 @@ footer ul li a {
     color: black
 }
 
-/* TODO Add media query for tablets */
-
 @media screen and (max-width: 1024px) {
-    body {
-      background-color: blue;
+    .filters {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 745px;
+        justify-content: flex-start;
+        display: inline;
     }
-  }
 
+    .filters h2 {
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    .filters ul {
+        display: flex;
+        margin-top: 0;
+        gap: 15px;
+        margin-bottom: 35px;
+
+    }
+
+    .filters ul li {
+        margin: 0;
+    }
+    
+    .accommodation-and-popular {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .accommodation {
+        width: 100%;
+        padding-bottom: 50px;
+        padding: 30px;
+    }
+
+    .accommodation-cards {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .accommodation-cards .cards {
+        width: 265px;
+    }
+
+    .popular {
+        width: 100%;
+    }
+
+    .popular-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .popular-cards .card {
+        width: 274px;
+        box-sizing: border-box;
+    }
+
+    .activities-cards .cards {
+        height: 270px;
+        width: 193px;
+    }
+
+    .activities-cards img {
+        width: 193px;
+        height: 200px;
+    }
+}
 
 
 /* TODO Add media query for mobile */
+/* TODO Center Logo for Mobile Version using css media query (step 11) */
+/* TODO Place Navigation tool below Logo for Mobile Version*/
+/* TODO Hover effect for nav using mobile media query*/
+/* TODO Add 50/50 split for nav using mobile media query*/
+
 
 @media screen and (max-width: 768px) {
     body {
-      background-color: olive;
+        background-color: olive;
     }
-  }
+}
