@@ -22,6 +22,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
+    min-width: 320px;
     max-width: 1440px;
 }
 
@@ -442,13 +443,12 @@ footer ul li a {
         margin-top: 0;
         gap: 15px;
         margin-bottom: 35px;
-
     }
 
     .filters ul li {
         margin: 0;
     }
-    
+
     .accommodation-and-popular {
         flex-direction: column;
         gap: 50px;
@@ -498,13 +498,108 @@ footer ul li a {
 
 /* TODO Add media query for mobile */
 /* TODO Center Logo for Mobile Version using css media query (step 11) */
-/* TODO Place Navigation tool below Logo for Mobile Version*/
 /* TODO Hover effect for nav using mobile media query*/
 /* TODO Add 50/50 split for nav using mobile media query*/
 
 
 @media screen and (max-width: 768px) {
-    body {
-        background-color: olive;
+
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        width: 62px;
+        padding: 30px;
+        margin: 0;
+    }
+
+    header nav ul {
+        padding: 0;
+        margin: 0;
+        font-size: 0;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin-left: 15px;
+        margin-right: 15px; 
+    }
+
+    header nav ul li a {
+        padding-top: 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
+
+    }
+
+    header nav ul li a:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+
+    }
+
+    .tagline {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .tagline h1{
+        font-size: 22px;
+    }
+
+    .tagline p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+    }
+
+    .filters h2 {
+        padding: 0 15px;
+        font-size: 21px;
+    }
+
+    .filters ul {
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    .info {
+        display: block;
+    }
+
+    .accommodation-and-popular section {
+        border-radius: 0;
+        padding: 30px 20px;
+        width: 100%;
+    }
+
+    .accommodation-and-popular {
+        flex-direction: column-reverse;
+    }
+
+    section .popular {
+    
+    }
+
+    .popular-cards {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .popular-cards .card {
+        width: 335px;
+        height: 146px;
     }
 }
+
