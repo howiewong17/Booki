@@ -529,7 +529,7 @@ footer ul li a {
 
     header nav ul li {
         margin-left: 15px;
-        margin-right: 15px; 
+        margin-right: 15px;
     }
 
     header nav ul li a {
@@ -551,7 +551,7 @@ footer ul li a {
         margin: 15px 0;
     }
 
-    .tagline h1{
+    .tagline h1 {
         font-size: 22px;
     }
 
@@ -575,21 +575,24 @@ footer ul li a {
     }
 
     .info {
-        display: block;
+        display: inline-block;
+        padding: 0 15px 35px 15px;
     }
 
     .accommodation-and-popular section {
         border-radius: 0;
         padding: 30px 20px;
         width: 100%;
+        background-color: white;
     }
 
     .accommodation-and-popular {
         flex-direction: column-reverse;
+        gap: 15px;
     }
 
-    section .popular {
-    
+    section.popular {
+        background-color: #F2F2F2;
     }
 
     .popular-cards {
@@ -601,5 +604,13 @@ footer ul li a {
         width: 335px;
         height: 146px;
     }
-}
 
+    .accommodation-cards .cards {
+        width: 335px;
+    }
+
+    .accommodation h4 {
+        padding: 15px;
+    }
+
+}
