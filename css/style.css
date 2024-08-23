@@ -112,6 +112,10 @@ header nav ul li a:hover {
     color: white;
 }
 
+.search button i {
+    display: none;
+}
+
 .filters {
     display: flex;
     align-items: center;
@@ -424,6 +428,11 @@ footer ul li a {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .search button i {
+        display: none;
+    }
+
     .filters {
         display: flex;
         flex-direction: column;
@@ -495,10 +504,6 @@ footer ul li a {
     }
 }
 
-
-/* TODO Add media query for mobile */
-/* TODO Center Logo for Mobile Version using css media query (step 11) */
-/* TODO Hover effect for nav using mobile media query*/
 /* TODO Add 50/50 split for nav using mobile media query*/
 
 
@@ -544,6 +549,27 @@ footer ul li a {
         border-bottom: 2px solid #0065FC;
         color: #0065FC;
 
+    }
+
+    .search {
+        padding: 0 15px;
+    }
+
+    .search button {
+        width: 49px;
+        border-radius: 20px;
+    }
+
+    .search button i {
+        display: block;
+        color: white;
+        background-color: #0065FC;
+        border: none;
+        padding: 0;
+    }
+
+    .search button span{
+        font-size: 1px;
     }
 
     .tagline {
@@ -596,13 +622,18 @@ footer ul li a {
     }
 
     .popular-cards {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 15px;
     }
 
     .popular-cards .card {
         width: 335px;
         height: 146px;
+    }
+
+    .accommodation-cards {
+        width: 335px;
+        flex-direction: column;
     }
 
     .accommodation-cards .cards {
@@ -613,4 +644,22 @@ footer ul li a {
         padding: 15px;
     }
 
+    .activities-cards {
+        flex-direction: column;
+    }
+
+    .activities-cards .cards {
+        width: 315px;
+    }
+
+    .activities-cards .cards img{
+        width: 315px;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+        height: 461px;
+    }
 }
+
