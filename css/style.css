@@ -620,8 +620,18 @@ footer ul li a {
     }
 
     .info {
-        display: inline-block;
+        display: flex;
         padding: 0 15px 35px 15px;
+        align-items: center;
+    }
+
+    .info i {
+        height: 10px;
+    }
+
+    .info p {
+        margin: 0;
+        padding-left: 10px;
     }
 
     .accommodation-and-popular section {
@@ -664,6 +674,8 @@ footer ul li a {
 
     .accommodation h4 {
         padding: 15px;
+        justify-content: center;
+        display: flex;
     }
 
     .activities-cards {
