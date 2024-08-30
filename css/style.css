@@ -22,7 +22,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: center;
-    min-width: 320px;
+    min-width: 303px;
     max-width: 1440px;
 }
 
@@ -570,7 +570,7 @@ footer ul li a {
 
     .search input {
         width: 100%;
-        max-width: 190px;
+        max-width: 185px;
     }
 
     .search button {
