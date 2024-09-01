@@ -168,7 +168,7 @@ header nav ul li a:hover {
 
 .main-container {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 45px;
     box-sizing: border-box;
 }
 
@@ -277,8 +277,8 @@ header nav ul li a:hover {
     gap: 8px;
 }
 
-.accommodation h4 {
-    text-decoration: none;
+.More-options {
+    font-weight: bold;
     margin: 0px;
     color: black;
     font-size: 18px;
@@ -355,9 +355,14 @@ header nav ul li a:hover {
 
 .activities-cards {
     display: flex;
-    gap: 30px;
+    gap: 28px;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.activities h2 {
+    margin: 0;
+    padding-bottom: 20px;
 }
 
 .activities-cards h2 {
