@@ -269,7 +269,7 @@ header nav ul li a:hover {
     font-size: 14px;
 }
 
-.accommodation-cards .cards .accommodation-text {
+.accommodation-text {
     height: 75px;
     padding-left: 15px;
     display: flex;
@@ -714,6 +714,11 @@ footer ul li a {
 
     .activities-cards .cards h3 {
         padding-top: 16px;
+    }
+
+    a.card-link {
+        display: flex;
+        justify-content: center;
     }
 
     footer {
